@@ -8,7 +8,6 @@
       <pre><code>
       Todo:
     "vee-validate": "^3.4.x",
-    "vuedraggable": "^2.24.x",
   </code></pre>
     </div>
   </div>

@@ -38,3 +38,6 @@ Vue.use(VueScrollTo);
 // vue2-touch-events
 import Vue2TouchEvents from "vue2-touch-events";
 Vue.use(Vue2TouchEvents);
+
+// vuedraggable
+// See usage in @/views/plugins/DraggableView.vue

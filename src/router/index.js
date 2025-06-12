@@ -12,6 +12,7 @@ import MediaQueryView from "@/views/plugins/MediaQueryView.vue";
 import ScrollToView from "@/views/plugins/ScrollToView.vue";
 import PopperView from "@/views/plugins/PopperView.vue";
 import TouchView from "@/views/plugins/TouchView.vue";
+import DraggablesView from "@/views/plugins/DraggablesView.vue";
 
 Vue.use(VueRouter);
 
@@ -77,6 +78,10 @@ const routes = [
       {
         path: "touch",
         component: TouchView,
+      },
+      {
+        path: "draggable",
+        component: DraggablesView,
       },
     ],
   },
