@@ -15,6 +15,7 @@
         <router-link to="/plugins/popper">Popper</router-link>
         <router-link to="/plugins/touch">Touch Events</router-link>
         <router-link to="/plugins/draggable">Drag'n Drop</router-link>
+        <router-link to="/plugins/validate">Validate</router-link>
       </nav>
       <section>
         <router-view />

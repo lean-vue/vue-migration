@@ -13,6 +13,7 @@ import ScrollToView from "@/views/plugins/ScrollToView.vue";
 import PopperView from "@/views/plugins/PopperView.vue";
 import TouchView from "@/views/plugins/TouchView.vue";
 import DraggablesView from "@/views/plugins/DraggablesView.vue";
+import ValidateView from "@/views/plugins/ValidateView.vue";
 
 Vue.use(VueRouter);
 
@@ -82,6 +83,10 @@ const routes = [
       {
         path: "draggable",
         component: DraggablesView,
+      },
+      {
+        path: "validate",
+        component: ValidateView,
       },
     ],
   },

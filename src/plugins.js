@@ -41,3 +41,19 @@ Vue.use(Vue2TouchEvents);
 
 // vuedraggable
 // See usage in @/views/plugins/DraggableView.vue
+
+// vee-validate
+import { ValidationObserver, ValidationProvider, extend } from "vee-validate";
+import { required, email } from "vee-validate/dist/rules";
+
+extend("required", {
+  ...required,
+  message: "Bitte fülle dieses Feld aus",
+});
+extend("email", {
+  ...email,
+  message: "Bitte gebe eine korrekte Email-Adresse an",
+});
+// Register it globally
+Vue.component("ValidationProvider", ValidationProvider);
+Vue.component("ValidationObserver", ValidationObserver);
