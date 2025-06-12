@@ -5,6 +5,7 @@ import AppLayout from "../views/original-app/AppLayout.vue";
 import PluginLayout from "../views/plugins/PluginLayout.vue";
 import PluginHomeView from "../views/plugins/IndexView.vue";
 import VViewerView from "../views/plugins/VViewerView.vue";
+import ClickawayView from "../views/plugins/ClickawayView.vue";
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,10 @@ const routes = [
       {
         path: "v-viewer",
         component: VViewerView,
+      },
+      {
+        path: "clickaway",
+        component: ClickawayView,
       },
     ],
   },

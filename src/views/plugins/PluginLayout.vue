@@ -5,10 +5,13 @@
     </header>
     <div>
       <nav>
-        <router-link to=".">Index</router-link>
-        <router-link to="plugins/v-viewer">V-Viewer</router-link>
+        <router-link to="/plugins">Index</router-link>
+        <router-link to="/plugins/v-viewer">V-Viewer</router-link>
+        <router-link to="/plugins/clickaway">Clickaway</router-link>
       </nav>
-      <router-view />
+      <section>
+        <router-view />
+      </section>
     </div>
   </div>
 </template>
@@ -33,6 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem 0;
+  }
+
+  section {
+    flex-grow: 1;
   }
 }
 </style>
