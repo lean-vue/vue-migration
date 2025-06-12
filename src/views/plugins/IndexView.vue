@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <p>
+      Demonstration verschiedener Vue 2 Plugins und deren Migration zu einer Vue
+      3 Anwendung
+    </p>
+    <div>
+      <pre><code>
+      Todo:
+      "v-viewer": "^1.5.x",
+    "vee-validate": "^3.4.x",
+    "vue": "^2.7.x",
+    "vue-clickaway": "^2.2.x",
+    "vue-js-modal": "^1.3.x",
+    "vue-js-toggle-button": "^1.3.x",
+    "vue-mq": "^1.0.x",
+    "vue-popperjs": "^2.3.x",
+    "vue-scrollTo": "^2.4.x",
+    "vue2-touch-events": "^3.2.x",
+    "vuedraggable": "^2.24.x",
+  </code></pre>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,37 @@
+<template>
+  <div id="plugin-wrapper">
+    <header>
+      <h1>Migration Plugins</h1>
+    </header>
+    <div>
+      <nav>
+        <router-link to="">Index</router-link>
+      </nav>
+      <router-view />
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import "normalize.css/normalize.css";
+@import "@/styles.scss";
+
+#plugin-wrapper {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    gap: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  nav {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+  }
+}
+</style>
