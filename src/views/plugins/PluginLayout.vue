@@ -12,6 +12,7 @@
         <router-link to="/plugins/modal">Modal</router-link>
         <router-link to="/plugins/mq">Media Query</router-link>
         <router-link to="/plugins/scroll-to">Scroll To</router-link>
+        <router-link to="/plugins/popper">Popper</router-link>
       </nav>
       <section>
         <router-view />

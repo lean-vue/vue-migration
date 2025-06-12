@@ -31,3 +31,6 @@ Vue.use(VueMq, {
 // vue-scrollTo
 import VueScrollTo from "vue-scrollTo";
 Vue.use(VueScrollTo);
+
+// vue-popperjs
+// See usage in @/views/plugins/PopperView.vue

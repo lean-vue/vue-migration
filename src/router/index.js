@@ -10,6 +10,7 @@ import ToggleButtonView from "../views/plugins/ToggleButtonView.vue";
 import ModalView from "@/views/plugins/ModalView.vue";
 import MediaQueryView from "@/views/plugins/MediaQueryView.vue";
 import ScrollToView from "@/views/plugins/ScrollToView.vue";
+import PopperView from "@/views/plugins/PopperView.vue";
 
 Vue.use(VueRouter);
 
@@ -67,6 +68,10 @@ const routes = [
       {
         path: "scroll-to",
         component: ScrollToView,
+      },
+      {
+        path: "popper",
+        component: PopperView,
       },
     ],
   },
