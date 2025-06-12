@@ -10,6 +10,7 @@
         <router-link to="/plugins/clickaway">Clickaway</router-link>
         <router-link to="/plugins/toggle-btn">Toogle Button</router-link>
         <router-link to="/plugins/modal">Modal</router-link>
+        <router-link to="/plugins/mq">Media Query</router-link>
       </nav>
       <section>
         <router-view />

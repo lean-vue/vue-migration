@@ -16,3 +16,14 @@ Vue.use(ToggleButton);
 // vue-js-modal
 import VModal from "vue-js-modal";
 Vue.use(VModal);
+
+// vue-mq
+import VueMq from "vue-mq";
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 480,
+    md: 720,
+    lg: 960,
+    xl: Infinity,
+  },
+});
