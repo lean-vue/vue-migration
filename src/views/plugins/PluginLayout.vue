@@ -8,6 +8,7 @@
         <router-link to="/plugins">Index</router-link>
         <router-link to="/plugins/v-viewer">V-Viewer</router-link>
         <router-link to="/plugins/clickaway">Clickaway</router-link>
+        <router-link to="/plugins/toggle-btn">Toogle Button</router-link>
       </nav>
       <section>
         <router-view />

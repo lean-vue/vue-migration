@@ -6,6 +6,7 @@ import PluginLayout from "../views/plugins/PluginLayout.vue";
 import PluginHomeView from "../views/plugins/IndexView.vue";
 import VViewerView from "../views/plugins/VViewerView.vue";
 import ClickawayView from "../views/plugins/ClickawayView.vue";
+import ToggleButtonView from "../views/plugins/ToggleButtonView.vue";
 
 Vue.use(VueRouter);
 
@@ -47,6 +48,10 @@ const routes = [
       {
         path: "clickaway",
         component: ClickawayView,
+      },
+      {
+        path: "toggle-btn",
+        component: ToggleButtonView,
       },
     ],
   },
