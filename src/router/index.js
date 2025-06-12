@@ -4,6 +4,7 @@ import HomeView from "../views/original-app/HomeView.vue";
 import AppLayout from "../views/original-app/AppLayout.vue";
 import PluginLayout from "../views/plugins/PluginLayout.vue";
 import PluginHomeView from "../views/plugins/IndexView.vue";
+import VViewerView from "../views/plugins/VViewerView.vue";
 
 Vue.use(VueRouter);
 
@@ -37,6 +38,10 @@ const routes = [
       {
         path: "",
         component: PluginHomeView,
+      },
+      {
+        path: "v-viewer",
+        component: VViewerView,
       },
     ],
   },

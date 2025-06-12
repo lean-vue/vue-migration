@@ -5,7 +5,8 @@
     </header>
     <div>
       <nav>
-        <router-link to="">Index</router-link>
+        <router-link to=".">Index</router-link>
+        <router-link to="plugins/v-viewer">V-Viewer</router-link>
       </nav>
       <router-view />
     </div>

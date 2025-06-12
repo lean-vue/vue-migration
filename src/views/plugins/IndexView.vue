@@ -7,7 +7,6 @@
     <div>
       <pre><code>
       Todo:
-      "v-viewer": "^1.5.x",
     "vee-validate": "^3.4.x",
     "vue": "^2.7.x",
     "vue-clickaway": "^2.2.x",
