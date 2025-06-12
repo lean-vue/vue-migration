@@ -11,6 +11,7 @@ import ModalView from "@/views/plugins/ModalView.vue";
 import MediaQueryView from "@/views/plugins/MediaQueryView.vue";
 import ScrollToView from "@/views/plugins/ScrollToView.vue";
 import PopperView from "@/views/plugins/PopperView.vue";
+import TouchView from "@/views/plugins/TouchView.vue";
 
 Vue.use(VueRouter);
 
@@ -72,6 +73,10 @@ const routes = [
       {
         path: "popper",
         component: PopperView,
+      },
+      {
+        path: "touch",
+        component: TouchView,
       },
     ],
   },

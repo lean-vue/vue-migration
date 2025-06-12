@@ -13,6 +13,7 @@
         <router-link to="/plugins/mq">Media Query</router-link>
         <router-link to="/plugins/scroll-to">Scroll To</router-link>
         <router-link to="/plugins/popper">Popper</router-link>
+        <router-link to="/plugins/touch">Touch Events</router-link>
       </nav>
       <section>
         <router-view />
