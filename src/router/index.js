@@ -9,6 +9,7 @@ import ClickawayView from "../views/plugins/ClickawayView.vue";
 import ToggleButtonView from "../views/plugins/ToggleButtonView.vue";
 import ModalView from "@/views/plugins/ModalView.vue";
 import MediaQueryView from "@/views/plugins/MediaQueryView.vue";
+import ScrollToView from "@/views/plugins/ScrollToView.vue";
 
 Vue.use(VueRouter);
 
@@ -62,6 +63,10 @@ const routes = [
       {
         path: "mq",
         component: MediaQueryView,
+      },
+      {
+        path: "scroll-to",
+        component: ScrollToView,
       },
     ],
   },

@@ -27,3 +27,7 @@ Vue.use(VueMq, {
     xl: Infinity,
   },
 });
+
+// vue-scrollTo
+import VueScrollTo from "vue-scrollTo";
+Vue.use(VueScrollTo);
