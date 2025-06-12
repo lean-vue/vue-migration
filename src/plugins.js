@@ -12,3 +12,7 @@ Vue.mixin(clickaway);
 // vue-js-toggle-button (oder nur die Komponente)
 import ToggleButton from "vue-js-toggle-button";
 Vue.use(ToggleButton);
+
+// vue-js-modal
+import VModal from "vue-js-modal";
+Vue.use(VModal);

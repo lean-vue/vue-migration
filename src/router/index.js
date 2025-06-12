@@ -7,6 +7,7 @@ import PluginHomeView from "../views/plugins/IndexView.vue";
 import VViewerView from "../views/plugins/VViewerView.vue";
 import ClickawayView from "../views/plugins/ClickawayView.vue";
 import ToggleButtonView from "../views/plugins/ToggleButtonView.vue";
+import ModalView from "@/views/plugins/ModalView.vue";
 
 Vue.use(VueRouter);
 
@@ -52,6 +53,10 @@ const routes = [
       {
         path: "toggle-btn",
         component: ToggleButtonView,
+      },
+      {
+        path: "modal",
+        component: ModalView,
       },
     ],
   },
