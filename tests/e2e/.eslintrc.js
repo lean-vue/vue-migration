@@ -1,3 +1,4 @@
+/*
 module.exports = {
   plugins: ["cypress"],
   env: {
@@ -7,4 +8,9 @@ module.exports = {
   rules: {
     strict: "off",
   },
+};
+*/
+
+module.exports = {
+  extends: ["plugin:cypress/recommended"],
 };

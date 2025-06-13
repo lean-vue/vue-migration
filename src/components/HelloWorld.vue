@@ -55,6 +55,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-cypress"
           target="_blank"
           rel="noopener"
+          style="text-decoration: line-through"
           >e2e-cypress</a
         >
       </li>

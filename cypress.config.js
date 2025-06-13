@@ -5,6 +5,8 @@ module.exports = defineConfig({
   screenshotsFolder: "tests/e2e/screenshots",
   videosFolder: "tests/e2e/videos",
   e2e: {
+    baseUrl: "http://localhost:8080",
+
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
