@@ -41,8 +41,8 @@ const store = new Vuex.Store({
 
 // eslint-disable-next-line no-unused-vars
 store.subscribe((mutation, state) => {
-  console.log(mutation.type);
-  console.log(mutation.payload);
+  // eslint-disable-next-line no-console
+  console.log(mutation);
 });
 
 export default store;

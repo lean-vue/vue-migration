@@ -32,12 +32,6 @@ export default {
   components: {
     UserInfo,
   },
-  computed: {
-    account() {
-      console.log(this.$store.state.auth.user);
-      return this.$store.state.auth.user?.name;
-    },
-  },
 };
 </script>
 <style lang="scss">
