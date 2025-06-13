@@ -59,6 +59,14 @@
           >e2e-cypress</a
         >
       </li>
+      <li>
+        <a
+          href="https://github.com/storybookjs/vue-cli-plugin-storybook"
+          target="_blank"
+          rel="noopener"
+          >storybook</a
+        >
+      </li>
     </ul>
     <h3>Essential Links</h3>
     <ul>

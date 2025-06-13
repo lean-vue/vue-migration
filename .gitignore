@@ -5,9 +5,12 @@ webpack_modules/
 # Build
 dist/
 
+# Cypress
 /tests/e2e/videos/
 /tests/e2e/screenshots/
 
+# Storybook
+storybook-static
 
 # local env files
 .env.local
