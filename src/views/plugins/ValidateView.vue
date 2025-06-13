@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login-frm">
     <h2>User Anmeldung</h2>
     <ValidationObserver v-slot="{ handleSubmit }">
       <form novalidate @submit.prevent="handleSubmit(onSubmit)">
