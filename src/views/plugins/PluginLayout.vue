@@ -6,8 +6,14 @@
     </header>
     <div>
       <nav>
-        <router-link to="/plugins">Index</router-link>
-        <router-link to="/plugins/v-viewer">V-Viewer</router-link>
+        <router-link to="/plugins">
+          <i class="myfonticon myfonticon-home" />
+          <span>Index</span>
+        </router-link>
+        <router-link to="/plugins/v-viewer">
+          <i class="myfonticon myfonticon-img-slides" />
+          <span>V-Viewer</span>
+        </router-link>
         <router-link to="/plugins/clickaway">Clickaway</router-link>
         <router-link to="/plugins/toggle-btn">Toogle Button</router-link>
         <router-link to="/plugins/modal">Modal</router-link>
