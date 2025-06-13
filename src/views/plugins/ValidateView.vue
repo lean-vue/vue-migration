@@ -36,14 +36,20 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 export default {
   data: () => ({
     account: "",
     email: "",
   }),
   methods: {
+    ...mapActions("auth", ["signIn"]),
     onSubmit() {
-      alert("Form has been submitted!");
+      this.signIn({
+        account: this.account,
+        email: this.email,
+      });
     },
   },
 };

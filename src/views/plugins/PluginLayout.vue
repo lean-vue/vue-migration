@@ -2,6 +2,7 @@
   <div id="plugin-wrapper">
     <header>
       <h1>Migration Plugins</h1>
+      <user-info />
     </header>
     <div>
       <nav>
@@ -24,6 +25,21 @@
   </div>
 </template>
 
+<script>
+import UserInfo from "@/components/UserInfo.vue";
+
+export default {
+  components: {
+    UserInfo,
+  },
+  computed: {
+    account() {
+      console.log(this.$store.state.auth.user);
+      return this.$store.state.auth.user?.name;
+    },
+  },
+};
+</script>
 <style lang="scss">
 @import "normalize.css/normalize.css";
 @import "@/styles.scss";
