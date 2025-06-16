@@ -1,34 +1,22 @@
 # vue-migration
 
-## Project setup
-```
-npm install
-```
+## Projekt-Aufbau
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Das Projekt ist ansatzweise an die übermittelte `package.json`-Datei angeglichen:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Alle Vue2 Plugins wurden übernommen
+- Das E2E-Testing wurde vom CLI Plugin losgelöst
+- Zusätzliche Dev-Toolchain wurde übernommen
 
-### Run your unit tests
-```
-npm run test:unit
-```
+Unterschiede sind:
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+- Kein Einbau der für die Migration weitgehend irrelevanten Third-Party Libraries.
+- Storybook 7 habe ich nicht zum laufen bekommen. Deshalb nur Version 6
+- Unit-Tests mit Jest sind aber drin über das CLI Plugin
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Ausgangspunkt:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+NPM install result:
+
+- added 2765 packages, and audited 2766 packages in 1m
+- 71 vulnerabilities (7 low, 36 moderate, 28 high)
