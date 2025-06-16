@@ -129,3 +129,31 @@ Und natürlich aus der `createApp`-Methode entfernen.
 Nun funktioniert in Teilen das Routing wieder (Home und About). Da meine
 Plugin-Seite aber im Layout einen Vuex-Zugriff macht, muss als
 nächstes auch die Ecosystem-Library `Vuex` aktualisiert werden.
+
+### 7. Vuex Upgrade
+
+`npm i -f vuex@4`
+
+In der `store/index.js` eine Vuex 4 Store-Instanz erzeugen:
+
+```js
+import { createStore } from "vuex";
+
+const store = createStore({
+// ...
+})
+
+//...
+```
+
+Und natürlich in der `main.js` das Plugin korrekt laden:
+
+```js
+const app = createApp(App);
+app.use(router);
+app.use(store);
+app.mount("#app");
+```
+
+Nun lässt sich die App erstmal komplett bedienen - bis auf die nicht funktionierenden Plugins
+der Liste oben.
