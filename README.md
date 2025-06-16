@@ -76,3 +76,9 @@ Ergebnis für die Plugin-Seiten
 - [ ] Draggable - Stürzt beim Drag ab
 - [ ] Vee Validate - Validierung klappt nicht, auch gültige Werte werden abgewiesen
 
+### 5. Global App Instanz beheben
+
+Da der fehlerhafte Router die App jetzt stark ausbremst, müssen wir sehr früh
+die globale App-Instanz entfernen.
+
+Zunächst wird der in Vue 3 nutzlose Production-Hinweis gelöscht.
