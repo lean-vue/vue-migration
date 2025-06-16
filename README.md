@@ -20,3 +20,18 @@ NPM install result:
 
 - added 2765 packages, and audited 2766 packages in 1m
 - 71 vulnerabilities (7 low, 36 moderate, 28 high)
+
+## Migrations-Schritte
+
+### 1. Installation Vue 3 und Compat-Build aka Migration-Build
+
+```sh
+npm i -f vue@3 @vue/compat
+```
+
+Das Force-Flag (`-f`) ist notwendig, da sonst einige Peer-Abhängigkeiten die
+Installation abbrechen lassen.
+
+Prinzipiell ist wichtig, dass die gleiche Versionsnummer haben. Die oft
+ebenfalls erwähnte Installation von `@vue/compiler-sfc` ist seit Vue 3.2.13
+nicht mehr notwendig.
