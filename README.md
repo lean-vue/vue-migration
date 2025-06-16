@@ -50,3 +50,29 @@ Siehe `vue.config.js` Zeile 8
 Das installierte Storybook-Plugin `vue-cli-plugin-storybook` erwartet jetzt auch
 die Storybook-Unterstützung für Vue 3, die aber noch nicht installiert ist.
 Deshalb zunächst einfach diese Zeile 62 aus der `package.json` entfernen.
+
+### 4. Anwendung im Dev-Modus staren
+
+`npm run serve`
+
+#### Console-Warnungen
+
+Drei Filter (in einer Datei) die verwendet werden
+
+#### Browser
+
+Zunächst funktionert das Routing nicht. Deshalb lässt sich die Anwendung
+schlecht ausprobieren. Mit manueller Eingabe der Links ergibt sich folgendes
+Ergebnis für die Plugin-Seiten
+
+- [x] V-Viewer
+- [x] Clickaway
+- [x] Toggle Btn
+- [x] Modal
+- [ ] Media Query (mq) - Stürzt ab
+- [x] ScrollTo
+- [ ] Popper - Stürzt ab
+- [x] Touch Events
+- [ ] Draggable - Stürzt beim Drag ab
+- [ ] Vee Validate - Validierung klappt nicht, auch gültige Werte werden abgewiesen
+
