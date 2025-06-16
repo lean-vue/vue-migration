@@ -1,55 +1,32 @@
 <template>
   <div class="login-frm">
     <h2>User Anmeldung</h2>
-    <ValidationObserver v-slot="{ handleSubmit }">
-      <form novalidate @submit.prevent="handleSubmit(onSubmit)">
-        <ValidationProvider name="Account" rules="required" v-slot="{ errors }">
-          <input
-            name="acc"
-            v-model="account"
-            type="text"
-            placeholder="Accountname"
-          />
-          <span>{{ errors[0] }}</span>
-        </ValidationProvider>
-
-        <ValidationProvider
-          name="E-mail"
-          rules="required|email"
-          v-slot="{ errors }"
-        >
-          <input
-            name="email"
-            v-model="email"
-            type="email"
-            placeholder="Gültige Email-Adresse"
-          />
-          <span>{{ errors[0] }}</span>
-        </ValidationProvider>
-
-        <div>
-          <button type="submit">Absenden</button>
-        </div>
-      </form>
-    </ValidationObserver>
+    <Form @submit="onSubmit">
+      <div>
+        <Field name="account" rules="required|min:3" />
+        <ErrorMessage name="account" />
+      </div>
+      <div>
+        <Field name="email" rules="required|email" />
+        <ErrorMessage name="email" />
+      </div>
+      <div>
+        <button type="submit">Absenden</button>
+      </div>
+    </Form>
   </div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
+import { Form, Field, ErrorMessage } from "vee-validate";
 
 export default {
-  data: () => ({
-    account: "",
-    email: "",
-  }),
+  components: { Form, Field, ErrorMessage },
   methods: {
     ...mapActions("auth", ["signIn"]),
-    onSubmit() {
-      this.signIn({
-        account: this.account,
-        email: this.email,
-      });
+    onSubmit(values) {
+      this.signIn(values);
     },
   },
 };

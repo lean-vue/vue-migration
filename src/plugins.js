@@ -43,6 +43,7 @@ Vue.use(Vue2TouchEvents);
 // See usage in @/views/plugins/DraggableView.vue
 
 // vee-validate
+/*
 import { ValidationObserver, ValidationProvider, extend } from "vee-validate";
 import { required, email } from "vee-validate/dist/rules";
 
@@ -57,3 +58,4 @@ extend("email", {
 // Register it globally
 Vue.component("ValidationProvider", ValidationProvider);
 Vue.component("ValidationObserver", ValidationObserver);
+*/

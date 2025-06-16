@@ -172,3 +172,20 @@ Beispielhaft liefere ich hier schon einmal Ideen zur Migration der Plugins für:
 - vee-validate
 - vue-js-modal
 - vue-mq
+
+#### 8.1 Vee-Validate v3
+
+Nutzung der neuen Version 4 - Alternativen: https://github.com/vuejs/awesome-vue?tab=readme-ov-file#validation
+
+`npm i -f vee-validate@4`
+
+Falls ähnlich wie in v3 vordefinierte Validatoren genutzt werden sollen:
+
+`npm i -f @vee-validate/rules`
+
+Die Anpassungen sind im einzelnen:
+
+- Neu-Implentierung des Views: `views/plugins/ValidateView.vue` - wesentlich cleaner
+- Bereitstellung der globalen Filter: `plugin-v3.js`
+- Keine globalen Komponenten
+- Aufräumen des alten Plugin-Codes: `plugin.js`

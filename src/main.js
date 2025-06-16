@@ -10,6 +10,7 @@ configureCompat({
 
 import "./assets/icon.font";
 import "./plugins";
+import "./plugins-v3";
 
 const app = createApp(App);
 app.use(router);
