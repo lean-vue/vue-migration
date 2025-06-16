@@ -4,16 +4,33 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  configureWebpack: (cfg) => {
+  chainWebpack: (config) => {
+    config.resolve.alias.set("vue", "@vue/compat");
+
+    config.module
+      .rule("vue")
+      .use("vue-loader")
+      .tap((options) => {
+        return {
+          ...options,
+          compilerOptions: {
+            compatConfig: {
+              MODE: 2,
+            },
+          },
+        };
+      });
+  },
+  configureWebpack: (config) => {
     if (process.env.NODE_ENV === "production") {
-      cfg.plugins.push(
+      config.plugins.push(
         new CopyModulesPlugin({
           destination: "webpack_modules",
         })
       );
     }
-    cfg.plugins.push(new MiniCssExtractPlugin());
-    cfg.module.rules.push({
+    config.plugins.push(new MiniCssExtractPlugin());
+    config.module.rules.push({
       test: /\.font\.js/,
       use: [
         MiniCssExtractPlugin.loader,

@@ -35,3 +35,12 @@ Installation abbrechen lassen.
 Prinzipiell ist wichtig, dass die gleiche Versionsnummer haben. Die oft
 ebenfalls erwähnte Installation von `@vue/compiler-sfc` ist seit Vue 3.2.13
 nicht mehr notwendig.
+
+### 2. Vue-Module durch den Compat-Build ersetzen
+
+Siehe `vue.config.js` Zeile 8
+
+### 3. Kompabilitäts-Modus auf Vue 2 einstellen
+
+- Compiler: siehe `vue.config.js` Zeile 10 bis 22
+- Runtime: siehe `main.js` Zeile 6 bis 9

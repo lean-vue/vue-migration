@@ -3,6 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import { configureCompat } from "vue";
+configureCompat({
+  MODE: 2,
+});
+
 Vue.config.productionTip = false;
 
 import "./assets/icon.font";
