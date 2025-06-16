@@ -1,4 +1,4 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -11,8 +11,10 @@ configureCompat({
 import "./assets/icon.font";
 import "./plugins";
 
-new Vue({
+const app = createApp({
   router,
   store,
-  render: (h) => h(App),
-}).$mount("#app");
+  ...App,
+});
+
+app.mount("#app");
