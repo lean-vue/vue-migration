@@ -44,3 +44,9 @@ Siehe `vue.config.js` Zeile 8
 
 - Compiler: siehe `vue.config.js` Zeile 10 bis 22
 - Runtime: siehe `main.js` Zeile 6 bis 9
+
+### Problem 1: Storybook Plugin
+
+Das installierte Storybook-Plugin `vue-cli-plugin-storybook` erwartet jetzt auch
+die Storybook-Unterstützung für Vue 3, die aber noch nicht installiert ist.
+Deshalb zunächst einfach diese Zeile 62 aus der `package.json` entfernen.
