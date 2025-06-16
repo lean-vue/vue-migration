@@ -10,9 +10,12 @@ configureCompat({
 
 import "./assets/icon.font";
 import "./plugins";
-import "./plugins-v3";
+import { registerPlugins } from "./plugins-v3";
 
 const app = createApp(App);
 app.use(router);
 app.use(store);
+
+registerPlugins(app);
+
 app.mount("#app");

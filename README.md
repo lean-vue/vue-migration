@@ -189,3 +189,27 @@ Die Anpassungen sind im einzelnen:
 - Bereitstellung der globalen Filter: `plugin-v3.js`
 - Keine globalen Komponenten
 - Aufräumen des alten Plugin-Codes: `plugin.js`
+
+#### 8.2 vue-mq
+
+Es gibt einen Fork des Projektes: https://github.com/craigrileyuk/vue3-mq
+Er scheint relativ aktiv weiter entwickelt zu werden, Homepage ist:
+https://craigrileyuk.github.io/vue3-mq/
+
+Der `mq`-Filter wurde natürlich nicht übernommen. Hier muss man sich
+selbst etwas stricken.
+
+Der Nachbau aller Funktionalitäten mit `useMediaquery` aus `@vueuse/core` halte ich
+für zu aufwändig.
+
+```js
+npm uninstall -f vue-mq
+npm i -f vue3-mq
+```
+
+Leider sieht die Verwendung in der aktuellen Version 4 schon wieder ganz anders
+aus. Das ist und wird dann aufwändig, wenn man viele Nutzungen hat. Dann entweder
+auf pures CSS ausweichen wo es geht. Oder sich *Helper*-Direktiven bzw. Komponenten
+bauen, die den alten Namen tragen.
+
+Bitte jetzt auch die Variation der Plugin-Registrierung beachten in `plugins-v3.js` und `main.js`.

@@ -1,3 +1,5 @@
+import { Vue3Mq } from "vue3-mq";
+
 // Vee Validate Global Validators
 import { configure, defineRule } from "vee-validate";
 import { required, email, min } from "@vee-validate/rules";
@@ -20,3 +22,11 @@ configure({
     return `Das Feld ${ctx.field} ist ungültig`;
   },
 });
+
+// Im folgenden werden alle Plugins initialisiert über eine Helper-Funktion,
+// damit die Registrierung nicht in der main.js erfolgen muss
+export function registerPlugins(app) {
+  app.use(Vue3Mq, {
+    global: true,
+  });
+}

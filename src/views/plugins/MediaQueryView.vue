@@ -1,17 +1,17 @@
 <template>
   <div>
-    <p>Current: {{ $mq }}</p>
+    <p>Current: {{ $mq.current }}</p>
     <section class="demo-filter">
-      <demo-card :colspan="$mq | mq({ sm: 3, lg: 1 })">A</demo-card>
-      <demo-card :colspan="$mq | mq({ sm: 3, lg: 1 })">B</demo-card>
-      <demo-card :colspan="$mq | mq({ sm: 3, lg: 1 })">C</demo-card>
+      <demo-card :colspan="calcCols()">A</demo-card>
+      <demo-card :colspan="calcCols()">B</demo-card>
+      <demo-card :colspan="calcCols()" x>C</demo-card>
     </section>
-    <mq-layout mq="sm">
-      <span> Display on sm </span>
-    </mq-layout>
-    <mq-layout mq="md+">
+    <MqResponsive target="xs+">
+      <span>Display on xs</span>
+    </MqResponsive>
+    <MqResponsive target="md+">
       <span> Display on md and larger </span>
-    </mq-layout>
+    </MqResponsive>
   </div>
 </template>
 
@@ -21,6 +21,11 @@ import DemoCard from "@/components/DemoCard.vue";
 export default {
   components: {
     DemoCard,
+  },
+  methods: {
+    calcCols() {
+      return this.$mq.mdMinus ? 3 : 1;
+    },
   },
 };
 </script>

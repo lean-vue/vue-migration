@@ -17,6 +17,7 @@ Vue.use(ToggleButton);
 import VModal from "vue-js-modal";
 Vue.use(VModal);
 
+/*
 // vue-mq
 import VueMq from "vue-mq";
 Vue.use(VueMq, {
@@ -27,6 +28,7 @@ Vue.use(VueMq, {
     xl: Infinity,
   },
 });
+*/
 
 // vue-scrollTo
 import VueScrollTo from "vue-scrollTo";
