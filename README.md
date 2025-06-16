@@ -96,3 +96,36 @@ const app = createApp({
 
 app.mount("#app");
 ```
+
+### 6. Router Upgrade
+
+`npm i -f vue-router@4`
+
+Und dann in der `router/index.js` den Code ändern zu einer Router-Instanz.
+Dabei den gewünschten History-Modus auswählen:
+
+```js
+// Die folgenden Zeilen entfernen
+// import Vue from "vue";
+// import import VueRouter from "vue-router";
+// Vue.use(VueRouter);
+
+import { createRouter, createWebHistory } from "vue-router";
+
+const router = createRouter({
+  history: createWebHistory({ base: process.env.BASE_URL }),
+  routes,
+});
+```
+
+Dann den Router als App-Plugin einbinden in der `main.js`:
+
+```js
+app.use(router);
+```
+
+Und natürlich aus der `createApp`-Methode entfernen.
+
+Nun funktioniert in Teilen das Routing wieder (Home und About). Da meine
+Plugin-Seite aber im Layout einen Vuex-Zugriff macht, muss als
+nächstes auch die Ecosystem-Library `Vuex` aktualisiert werden.

@@ -12,9 +12,9 @@ import "./assets/icon.font";
 import "./plugins";
 
 const app = createApp({
-  router,
   store,
   ...App,
 });
 
+app.use(router);
 app.mount("#app");

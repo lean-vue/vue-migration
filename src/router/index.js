@@ -1,5 +1,5 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+
 import HomeView from "../views/original-app/HomeView.vue";
 import AppLayout from "../views/original-app/AppLayout.vue";
 import PluginLayout from "../views/plugins/PluginLayout.vue";
@@ -14,8 +14,6 @@ import PopperView from "@/views/plugins/PopperView.vue";
 import TouchView from "@/views/plugins/TouchView.vue";
 import DraggablesView from "@/views/plugins/DraggablesView.vue";
 import ValidateView from "@/views/plugins/ValidateView.vue";
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -92,9 +90,8 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
