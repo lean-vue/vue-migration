@@ -157,3 +157,18 @@ app.mount("#app");
 
 Nun lässt sich die App erstmal komplett bedienen - bis auf die nicht funktionierenden Plugins
 der Liste oben.
+
+### 8. Plugins
+
+In diesem Projekt sind keine weiteren Deprecations eingebaut - zumindest nicht
+durch mich absichtlich konstruiert. Einige stecken natürlich in der Verwendung
+der Plugins drin, wie zum Beispiel die drei Filter-Anwendungen beim `vue-mq` - Plugin.
+
+Die Migration solcher *eigener* Code-Deprecations erfolgt nach dem gestern demonstrierten
+Muster.
+
+Beispielhaft liefere ich hier schon einmal Ideen zur Migration der Plugins für:
+
+- vee-validate
+- vue-js-modal
+- vue-mq
