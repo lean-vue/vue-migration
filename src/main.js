@@ -5,7 +5,7 @@ import store from "./store";
 
 import { configureCompat } from "vue";
 configureCompat({
-  MODE: 2,
+  MODE: 3,
 });
 
 import "./assets/icon.font";
