@@ -15,9 +15,11 @@ Vue.mixin(clickaway);
 import ToggleButton from "vue-js-toggle-button";
 Vue.use(ToggleButton);
 
+/*
 // vue-js-modal
 import VModal from "vue-js-modal";
 Vue.use(VModal);
+*/
 
 /*
 // vue-mq

@@ -1,6 +1,7 @@
 import { Vue3Mq } from "vue3-mq";
 import "viewerjs/dist/viewer.css";
 import VueViewer from "v-viewer";
+import VueJSModal from "@febe95/vue-js-modal";
 
 // Vee Validate Global Validators
 import { configure, defineRule } from "vee-validate";
@@ -32,4 +33,5 @@ export function registerPlugins(app) {
     global: true,
   });
   app.use(VueViewer);
+  app.use(VueJSModal);
 }
