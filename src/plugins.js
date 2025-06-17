@@ -7,9 +7,11 @@ import VueViewer from "v-viewer";
 Vue.use(VueViewer);
 */
 
+/*
 //  vue-clickaway (besser pro Component registrieren)
 import { mixin as clickaway } from "vue-clickaway";
 Vue.mixin(clickaway);
+*/
 
 /*
 // vue-js-toggle-button (oder nur die Komponente)
@@ -43,9 +45,11 @@ Vue.use(VueScrollTo);
 // vue-popperjs
 // See usage in @/views/plugins/PopperView.vue
 
+/*
 // vue2-touch-events
 import Vue2TouchEvents from "vue2-touch-events";
 Vue.use(Vue2TouchEvents);
+*/
 
 // vuedraggable
 // See usage in @/views/plugins/DraggableView.vue

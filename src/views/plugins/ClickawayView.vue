@@ -2,7 +2,7 @@
   <div>
     <article>
       <section v-on-clickaway="awayFromA">Sektion A</section>
-      <section v-on-click-away="awayFromB">Sektion B</section>
+      <section v-on-clickaway="awayFromB">Sektion B</section>
     </article>
     <ul>
       <li v-for="(m, index) in messages" :key="index">{{ m }}</li>
@@ -11,13 +11,12 @@
 </template>
 
 <script>
-import { directive as onClickAway } from "vue-clickaway";
-// import { mixin as clickaway } from "vue-clickaway";
+import { vOnClickOutside } from "@vueuse/components";
+
 export default {
   directives: {
-    onClickAway,
+    onClickaway: vOnClickOutside,
   },
-  // mixins: [ clickaway ],
   data() {
     return {
       messages: [],
