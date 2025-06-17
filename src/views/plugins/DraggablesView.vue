@@ -2,27 +2,21 @@
   <div class="row">
     <div class="col-3">
       <h3>Draggable 1</h3>
-      <draggable class="list-group" :list="list1" group="people">
-        <div
-          class="list-group-item"
-          v-for="element in list1"
-          :key="element.name"
-        >
-          {{ element.name }}
-        </div>
+      <draggable class="list-group" :list="list1" itemKey="id" group="people">
+        <template #item="{ element }">
+          <div class="list-group-item">{{ element.name }}</div>
+        </template>
       </draggable>
     </div>
 
     <div class="col-3">
       <h3>Draggable 2</h3>
-      <draggable class="list-group" :list="list2" group="people">
-        <div
-          class="list-group-item"
-          v-for="element in list2"
-          :key="element.name"
-        >
-          {{ element.name }}
-        </div>
+      <draggable class="list-group" :list="list2" itemKey="id" group="people">
+        <template #item="{ element }">
+          <div class="list-group-item">
+            {{ element.name }}
+          </div>
+        </template>
       </draggable>
     </div>
   </div>
@@ -30,6 +24,7 @@
 
 <script>
 import draggable from "vuedraggable";
+draggable.compatConfig = { MODE: 3 };
 
 export default {
   components: {
