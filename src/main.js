@@ -3,11 +3,6 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import { configureCompat } from "vue";
-configureCompat({
-  MODE: 3,
-});
-
 import "./assets/icon.font";
 // import "./plugins";
 import { registerPlugins } from "./plugins-v3";
