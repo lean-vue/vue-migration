@@ -1,12 +1,14 @@
 <template>
   <div>
-    <toggle-button v-model="toggleState" />
+    <my-switch v-model="toggleState" />
     <hr />
     Status: {{ toggleState ? "An" : "Aus" }}
   </div>
 </template>
 
 <script>
+// my-switch ist global registriert (plugins-v3.js)
+// Alternativ: saubere Implementierung von components/ui/app-switch.vue
 export default {
   data() {
     return { toggleState: false };

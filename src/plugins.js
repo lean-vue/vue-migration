@@ -11,9 +11,11 @@ Vue.use(VueViewer);
 import { mixin as clickaway } from "vue-clickaway";
 Vue.mixin(clickaway);
 
+/*
 // vue-js-toggle-button (oder nur die Komponente)
 import ToggleButton from "vue-js-toggle-button";
 Vue.use(ToggleButton);
+*/
 
 /*
 // vue-js-modal

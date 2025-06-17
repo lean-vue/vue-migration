@@ -3,6 +3,9 @@ import "viewerjs/dist/viewer.css";
 import VueViewer from "v-viewer";
 import VueJSModal from "@febe95/vue-js-modal";
 
+import Toggle from "@vueform/toggle/src/Toggle";
+import "@vueform/toggle/themes/default.css";
+
 // Vee Validate Global Validators
 import { configure, defineRule } from "vee-validate";
 import { required, email, min } from "@vee-validate/rules";
@@ -34,4 +37,7 @@ export function registerPlugins(app) {
   });
   app.use(VueViewer);
   app.use(VueJSModal);
+
+  // Globale Komponenten
+  app.component("my-switch", Toggle);
 }
