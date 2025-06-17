@@ -2,6 +2,7 @@ import { Vue3Mq } from "vue3-mq";
 import "viewerjs/dist/viewer.css";
 import VueViewer from "v-viewer";
 import VueJSModal from "@febe95/vue-js-modal";
+import VueScrollTo from "vue-scrollto";
 
 import Toggle from "@vueform/toggle/src/Toggle";
 import "@vueform/toggle/themes/default.css";
@@ -40,4 +41,7 @@ export function registerPlugins(app) {
 
   // Globale Komponenten
   app.component("my-switch", Toggle);
+
+  // Globale Direktive
+  app.directive("scroll-to", VueScrollTo);
 }

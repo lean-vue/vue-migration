@@ -9,7 +9,7 @@ configureCompat({
 });
 
 import "./assets/icon.font";
-import "./plugins";
+// import "./plugins";
 import { registerPlugins } from "./plugins-v3";
 
 const app = createApp(App);

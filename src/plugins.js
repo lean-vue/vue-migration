@@ -1,4 +1,4 @@
-import Vue from "vue";
+// import Vue from "vue";
 
 /*
 // v-viewer
@@ -38,9 +38,11 @@ Vue.use(VueMq, {
 });
 */
 
+/*
 // vue-scrollTo
 import VueScrollTo from "vue-scrollTo";
 Vue.use(VueScrollTo);
+*/
 
 // vue-popperjs
 // See usage in @/views/plugins/PopperView.vue

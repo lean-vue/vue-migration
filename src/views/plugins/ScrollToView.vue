@@ -17,7 +17,6 @@
         <h2>Heading 5</h2>
       </div>
     </article>
-    <my-button @click="toTop">Top</my-button>
     <aside class="scroll-btn">
       <a href="#" v-scroll-to="'#sec1'">Scroll to Section 1</a>
       <a href="#" v-scroll-to="'#sec2'">Scroll to Section 2</a>
@@ -29,18 +28,7 @@
 </template>
 
 <script>
-import MyButton from "@/components/MyButton.vue";
-
-export default {
-  components: {
-    MyButton,
-  },
-  methods: {
-    toTop() {
-      //this.$scrollTo("#sec1");
-    },
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
